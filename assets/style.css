@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text&family=Roboto&display=swap');
+
+*{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    font-family: 'Red Hat Text', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+    padding-bottom: 200px;
+    background-color: rgb(248,249,253,1);
+}
+
+.header-text{
+    padding: 2%;
+    font-size: 40pt;
+}
+.header-bottom-text{
+    padding: 2%;
+    font-size: 20pt;
+    font-weight: 400px;
+}
+.inner{
+    display: flex;
+    width: 100vw;
+    padding-top: 2%;
+    height: 100vh;
+}
+.buy-car{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-image: url(./images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    background-position-x: right;
+    background-position-y: center;
+}
+.buy-car > div{
+    border-radius: 10px;
+    margin-left: 5%;
+    width: 40%
+    
+}
+@media (max-width: 1000px){
+    .header-text{
+        font-size: 60pt;
+    }
+    .header-bottom-text{
+        font-size: 30pt;
+    }
+    .buy-car > div{
+        color: white;
+        background-color: rgba(86, 86, 86, 0.921);
+        margin: 20px;
+        width: fit-content
+        
+    }
+}
+.bizi-secin{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bizi-secin > div{
+    padding-top: 50px;
+    width: 100%;
+    display:  flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    flex-wrap: wrap;
+
+}
+ .bizi-secin > div div{ /* text kutuları */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 450px;
+    width: 430px;
+
+}
+.bizi-secin > div div > img {
+    height: 100px;
+    padding-bottom: 30px;
+}
+.bizi-secin > div div > h3 {
+    text-align: center;
+    font-size: 30pt;
+    font-weight: 600px;
+}
+.bizi-secin > div div > p {
+    text-align: center;
+    font-size: 20pt;
+    font-weight: 300;
+}
+@media (max-width: 1065px){ /* bizi secin 1065 ve alti icin */
+    .bizi-secin > div div > h3 {
+        text-align: center;
+        font-size: 60pt;
+        font-weight: 600px;
+    }
+    .bizi-secin > div div{ /* text kutuları */
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 450px;
+        width: fit-content
+    
+    }
+    .bizi-secin > div div > p {
+        text-align: center;
+        font-size: 25pt;
+        font-weight: 600px;
+    }
+}
+.son-kisim{
+    margin-top: 150px;
+    height: fit-content;
+    width: fit-content;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.son-kisim > h3{
+    transition: 300ms;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    transform: translateY(-50%);
+    font-size: 40pt;
+}
+.son-kisim > img{
+    transition: 300ms;
+    width: 90%;
+    filter: brightness(-50%) contrast(300%) blur(3px);
+}
+.son-kisim:hover > h3{
+    opacity: 0%;
+}
+.son-kisim:hover > img{
+    filter: brightness(100%);
+}
